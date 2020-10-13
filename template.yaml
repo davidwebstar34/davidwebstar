@@ -355,6 +355,9 @@ Resources:
     Properties: 
       AppId: !GetAtt AmplifyApp.AppId
       DomainName: davidwebstar.com
+      SubDomainSettings:
+          - Prefix: master
+            BranchName: !GetAtt AmplifyBranch.BranchName
 
   AmplifyBranch:
     Type: AWS::Amplify::Branch
