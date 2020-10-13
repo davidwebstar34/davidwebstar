@@ -356,7 +356,7 @@ Resources:
       AppId: !GetAtt AmplifyApp.AppId
       DomainName: davidwebstar.com
       SubDomainSettings:
-          - Prefix: master
+          - Prefix: ''
             BranchName: !GetAtt AmplifyBranch.BranchName
 
   AmplifyBranch:
