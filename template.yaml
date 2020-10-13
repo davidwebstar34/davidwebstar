@@ -350,6 +350,12 @@ Resources:
           Value: Todo
       IAMServiceRole: !GetAtt AmplifyRole.Arn
 
+  AmplifyDomain:
+    Type: AWS::Amplify::Domain
+    Properties: 
+      AppId: !GetAtt AmplifyApp.AppId
+      DomainName: davidwebstar.com
+
   AmplifyBranch:
     Type: AWS::Amplify::Branch
     Properties:
